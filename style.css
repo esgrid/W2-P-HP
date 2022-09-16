@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@100;200;300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Devanagari', sans-serif;
+}
+
+body {
+    background-color: beige;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.main {
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    border: 1px solid brown;
+    border-radius: 5px;
+    background-color: rgb(248, 205, 188);
+}
+
+/* img {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color:brown;
+}
+
+h2.card-title {
+    background-color: brown;
+    color: gold;
+    text-align: center;
+    margin: 0;
+    padding: 5%;
+}
+
+.card  img {
+    /* display: block; */
+    width: 100%;
+    padding: 20px;
+}
+
+.sliders {
+    padding: 20px;
+    /* display: flex;
+    flex-direction: column; */
+    margin-top: auto;
+    background-image: url("https://image.shutterstock.com/image-illustration/magic-hat-tattered-sorting-illustration-600w-2004374252.jpg");
+    /* background-attachment: fixed; */
+    text-align: left;
+}
+
+.single-slider {
+    padding: 5px;
+}
+
+.sliders label {
+    padding: 5px;
+    font-weight:500;
+}
+
+input.water {
+    accent-color: silver;
+}
+
+input.earth {
+    accent-color: yellow;
+}
+
+input.fire {
+    accent-color: red;
+}
+
+input.wind {
+    accent-color: blue;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    background-color: brown;
+    opacity: 0.95;
+    color:gold;
+    font-size: x-large;
+    font-weight: 500;
+    border: 1px solid brown;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: gold;
+    color: brown;
+    border: 1px solid gold;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: cadetblue;
+    color:aliceblue;
+    border: 1px solid cadetblue;
+}
+
+table {
+    border: 1px solid black;
+    margin-bottom: 4rem;
+    display: inline-block;
+    font-weight: 500;
+}
+
+td {
+    padding: 10px;
+    height: 2.5rem;
+}
+
+td.red {
+    background-color: red;
+}
+td.gold {
+    background-color: gold;
+}
+
+td.green {
+    background-color: green;
+}
+
+td.silver {
+    background-color: silver;
+}
+
+td.yellow {
+    background-color: yellow;
+}
+
+td.black {
+    background-color: black;
+}
+
+td.blue {
+    background-color: blue;
+}
+
+td.bronze {
+    background-color: #CD7F32;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* margin: 0 auto; */
+    text-align: center;
+    color: rgb(64, 79, 94);
+    background-color: rgb(198, 230, 219);
+}
+
+footer > p {
+    margin: 10px auto;
+}
+
+@media(min-width: 425px){
+    .main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 950px){
+    .main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width: 1200px) {
+    .main{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media(min-width: 1500px) {
+    .main{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
