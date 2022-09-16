@@ -1,50 +1,4 @@
-const characters = [
-    {
-        "name": "Harry Potter",
-        "image": "https://upload.wikimedia.org/wikipedia/en/d/d7/Harry_Potter_character_poster.jpg"
-    },
-    {
-        "name": "Ginny Weasley",
-        "image": "https://upload.wikimedia.org/wikipedia/en/e/e7/Ginny_Weasley_poster.jpg"
-    },
-    {
-        "name": "Hermione Granger",
-        "image": "https://upload.wikimedia.org/wikipedia/en/d/d3/Hermione_Granger_poster.jpg"
-    },
-    {
-        "name": "Tom Riddle",
-        "image": "https://upload.wikimedia.org/wikipedia/en/e/e1/Riddleinhogwarts.jpg"
-    },
-    {
-        "name": "Severus Snape",
-        "image": "https://upload.wikimedia.org/wikipedia/en/b/b9/Ootp076.jpg"
-    },
-    {
-        "name": "Draco Malfoy",
-        "image": "https://upload.wikimedia.org/wikipedia/en/1/16/Draco_Mal.JPG"
-    },
-    {
-        "name": "Hagrid",
-        "image": "https://upload.wikimedia.org/wikipedia/en/1/10/RubeusHagrid.jpg"
-    },
-    {
-        "name": "Luna Lovegood",
-        "image": "https://upload.wikimedia.org/wikipedia/en/c/c2/LunaLovegood.jpeg"
-    },
-    {
-        "name": "Ron Weasley",
-        "image": "https://upload.wikimedia.org/wikipedia/en/5/5e/Ron_Weasley_poster.jpg"
-    },
-    {
-        "name": "Sirius Black",
-        "image": "https://upload.wikimedia.org/wikipedia/en/6/6b/Sirius_Black.jpeg"
-    },
-    {
-        "name": "Neville Longbottom",
-        "image": "https://upload.wikimedia.org/wikipedia/en/7/75/Neville_Longbottom.jpeg"
-    }
-]
-
+import characters from "./data.js";
 
 function addGlobalEventListener(type, selector, callback, options){
     document.addEventListener(type, e => {
@@ -66,7 +20,7 @@ let createCharacter = ({name, image}) => {
     
     const sliderContainer = document.createElement('div')
     sliderContainer.classList.add('sliders')
-    
+
     const sliders = ["wind", "fire", "earth", "water"]
     sliders.forEach((slider) => {
         const sliderElement = document.createElement('input')
@@ -80,16 +34,16 @@ let createCharacter = ({name, image}) => {
         singleSliderContainer.classList.add('single-slider')
 
         singleSliderContainer.appendChild(sliderElement)
-        sliderLabel = document.createElement('label')
+        const sliderLabel = document.createElement('label')
         sliderLabel.appendChild(node(slider))
         singleSliderContainer.appendChild(sliderLabel)
 
         sliderContainer.appendChild(singleSliderContainer)
     })
-    sortingButtonContainer = document.createElement('div')
+    const sortingButtonContainer = document.createElement('div')
     sortingButtonContainer.classList.add('sorting-hat')
 
-    sortingButton = document.createElement('button')
+    const sortingButton = document.createElement('button')
     sortingButton.appendChild(node("Go to..."))
     sortingButtonContainer.appendChild(sortingButton)
     sliderContainer.appendChild(sortingButtonContainer)
@@ -129,6 +83,6 @@ addGlobalEventListener('click', 'button', (e) => {
         "wind": "#CD7F32"
     }
     card.style.backgroundColor = colourForHouse[inputs[chosenIndex].className]
-    console.log(card)
+    // console.log(card)
 }, null)
 
