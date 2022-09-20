@@ -59,6 +59,22 @@ h2.card-title {
     padding: 20px;
 }
 
+.card.fire {
+    background-color: gold;
+}
+
+.card.water {
+    background-color: green;
+}
+
+.card.earth {
+    background-color: black;
+}
+
+.card.wind {
+    background-color: #CD7F32;
+}
+
 .sliders {
     padding: 20px;
     /* display: flex;
@@ -67,6 +83,8 @@ h2.card-title {
     background-image: url("https://image.shutterstock.com/image-illustration/magic-hat-tattered-sorting-illustration-600w-2004374252.jpg");
     /* background-attachment: fixed; */
     text-align: left;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .single-slider {
