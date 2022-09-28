@@ -1,6 +1,5 @@
 import characters from "./data.js";
 
-
 // A Global event listener function to use with any type, selector, callback and option
 function addGlobalEventListener(type, selector, callback, options){
     document.addEventListener(type, e => {
@@ -27,7 +26,6 @@ let createCharacter = ({name, image}) => {
     //        <button> Go to...</button> 
     //     </div>
     // </div>
-
 
     const card = document.createElement('div')
     card.classList.add('card')
@@ -74,12 +72,10 @@ let createCharacter = ({name, image}) => {
     main.appendChild(card)
 }
 
-
 // Iterating over the characters and creating the cards with createCharacter(character)
 characters.forEach(character => {
     createCharacter(character);
 })
-
 
 // Calling addGlobalEventListener function with the 'click' event, 'button' selector
 // and an anonymous function that selects the "card" class and then
