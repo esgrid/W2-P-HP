@@ -17,7 +17,7 @@ let createCharacter = ({name, image}) => {
     // The tree looks like this:
     // <div class="card">
     //     <h2 class="card-title">
-    //     <img src="...."
+    //     <img src="....">
     //     <div class="sliders">
     //        <div class="single-slider">
     //              <input type="range" min="1" max="100" class="wind/fire/earth/water">
